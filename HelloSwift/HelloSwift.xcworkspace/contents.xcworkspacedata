@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:L01HelloWorld/L01HelloWorld.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L02String/L02String.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L03ControlFlow/L03ControlFlow.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L04Class/L04Class.xcodeproj">
+   </FileRef>
+</Workspace>

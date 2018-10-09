@@ -57,3 +57,39 @@ func makeIncrementer() -> ((Int) -> Int) {
 var increment = makeIncrementer()
 print(increment(7))
 
+
+// 函数作为参数
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+var numbers = [20, 19, 7, 12]
+print(hasAnyMatches(list: numbers, condition: lessThanTen))
+
+let x = numbers.map({ (number: Int) -> Int in
+    let result = 3 * number
+    return result
+})
+print(x)
+
+let y = numbers.map({ number in 2 * number })
+print(y)
+
+var shape = Shape(name: "circle")
+shape.numberOfSides = 20
+print(shape.simpleDescription())
+
+var rect = RectShape(length: 10, name: "Rect")
+print(rect.simpleDescription())
+
+print(rect.size)
+rect.size = 64
+print(rect.length)
+
